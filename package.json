@@ -3,16 +3,23 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "vite"
+     "build": "tailwindcss -i ./src/styles.css -o ./public/styles.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ub-victor/Tailwindcss-Website.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ub-victor/Tailwindcss-Website/issues"
+  },
+  "homepage": "https://github.com/ub-victor/Tailwindcss-Website#readme",
   "description": "",
   "devDependencies": {
     "autoprefixer": "^10.4.20",
     "postcss": "^8.5.1",
-    "tailwindcss": "^3.4.17",
-    "vite": "^6.0.7"
+    "tailwindcss": "^3.4.17"
   }
 }
