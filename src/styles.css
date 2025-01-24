@@ -1,31 +1,52 @@
 @tailwind base;  
 @tailwind components;  
+@tailwind utilities;
 
-.btn {  
+@layer components {
+    .btn-primary {  
+        @apply 
+            inline-block 
+            px-5 
+            py-3 
+            rounded-lg 
+            bg-indigo-500 
+            hover:bg-indigo-400 
+            sm:hover:bg-green-500  
+            focus:outline-none   
+            focus:ring 
+            focus:ring-offset-2 
+            focus:ring-indigo-500 
+            focus:ring-opacity-50 
+            active:bg-indigo-600  
+            text-white 
+            uppercase 
+            tracking-wide 
+            font-semibold 
+            text-sm  
+            sm:text-base;  
+    }  
+
+
+.btn-secondary {  
     @apply 
         inline-block 
         px-5 
         py-3 
         rounded-lg 
-        shadow-lg 
-        bg-indigo-500 
-        hover:bg-indigo-400 
-        sm:hover:bg-green-500 
-        hover:-translate-y-0.5 
+        bg-gray-300 
+        hover:bg-gray-200 
+        sm:hover:bg-green-500  
         focus:outline-none   
         focus:ring 
         focus:ring-offset-2 
-        focus:ring-indigo-500 
+        focus:ring-gray-300 
         focus:ring-opacity-50 
-        active:bg-indigo-600 
-        transform 
-        transition 
-        text-white 
+        active:bg-gray-400 
+        text-gray-800
         uppercase 
         tracking-wide 
         font-semibold 
-        text-sm /* Corrected this line */
+        text-sm  
         sm:text-base;  
 }  
-
-@tailwind utilities;
+}
